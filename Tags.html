@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<head lang="de">
+    <title>Tags and Attributes</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    <nav class="navÜ">
+        <button onclick="location.href='index.html'">Übersicht</button>
+    </nav>
+    <h1>Tags and Attributes</h1>
+
+    <main>
+        <h2>Grundlagen</h2>
+        <ul>
+            <li>HTML = Hypertext Markup Language, 1991, Tim Berners-Lee</li>
+            <li>Keine Programmiersprache, sondern Auszeichnungssprache</li>
+            <li>CSS = Aussehen, JavaScript = Dynamik</li>
+            <li>HTML5 ist ein "living document" (WHATWG)</li>
+        </ul>
+
+        <h2>Tags</h2>
+        <ul>
+            <li>Aufbau: Starttag, Inhalt, Endtag</li>
+            <li>Attribute stehen im Starttag: name="wert"</li>
+            <li>Void-Elemente ohne Endtag: br, img, hr, link, meta, input</li>
+            <li>Verschachteln: innere Tags zuerst schließen</li>
+        </ul>
+
+        <h2>Grundgerüst</h2>
+        <ul>
+            <li>DOCTYPE html am Anfang, wird nicht geschlossen</li>
+            <li>html enthält head und body</li>
+            <li>head = Titel, CSS, JS, Meta</li>
+            <li>body = sichtbarer Inhalt</li>
+            <li>charset UTF-8 für Umlaute</li>
+            <li>viewport für mobile Geräte</li>
+        </ul>
+
+        <h2>Wichtige Elemente</h2>
+        <ul>
+            <li>p = Absatz, br = Zeilenumbruch (nie für Abstände)</li>
+            <li>h1 bis h6 = Überschriften, strukturieren die Seite</li>
+            <li>img = Bild, braucht src und alt</li>
+            <li>ul = Punkte, ol = Nummern, beide mit li</li>
+            <li>dl, dt, dd = Definitionsliste</li>
+            <li>a = Link, Ziel im href</li>
+            <li>table, tr, th, td = Tabelle</li>
+            <li>thead, tbody, tfoot = Bereiche; rowspan, colspan = Zellen verbinden</li>
+            <li>strong, em, mark = wichtig, betont, hervorgehoben</li>
+            <li>b, i, s sind deprecated</li>
+        </ul>
+
+        <h2>Globale Attribute</h2>
+        <ul>
+            <li>id = eindeutiger Name</li>
+            <li>class = CSS-Klassen</li>
+            <li>style = CSS direkt am Element</li>
+            <li>title = Zusatzinfo</li>
+            <li>lang = Sprache</li>
+        </ul>
+
+        <h2>Inline und Block</h2>
+        <ul>
+            <li>Inline: wie ein Zeichen im Text – strong, em, a, img, span</li>
+            <li>Block: eigene Zeile, volle Breite – h1-h6, p, ul, table, div</li>
+            <li>Änderbar mit der CSS-Eigenschaft display</li>
+        </ul>
+
+        <h2>Gruppieren</h2>
+        <ul>
+            <li>div = Block, span = Inline, beide ohne Bedeutung</li>
+            <li>Semantisch: header, nav, main, section, article, aside, footer</li>
+            <li>Auch: figure, figcaption, details, summary, time</li>
+            <li>Vorteil: Screenreader und Reader Mode erkennen die Bereiche</li>
+        </ul>
+
+        <h2>Accessibility</h2>
+        <ul>
+            <li>Screenreader lesen die Seite vor</li>
+            <li>Überschriften-Hierarchie = Navigation</li>
+            <li>Überschriften nie nur für größere Schrift verwenden</li>
+        </ul>
+    </main>
+</body>
+<footer></footer>

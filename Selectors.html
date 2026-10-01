@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<head lang="de">
+    <title>Selectors</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    <nav class="navÜ">
+        <button onclick="location.href='index.html'">Übersicht</button>
+    </nav>
+    <h1>Selectors</h1>
+
+    <main>
+        <h2>CSS-Syntax</h2>
+        <ul>
+            <li>CSS = Cascading Style Sheets, trennt Inhalt und Darstellung</li>
+            <li>Regel = Selektor plus Deklarationen in geschweiften Klammern</li>
+            <li>Deklaration = Eigenschaft, Doppelpunkt, Wert</li>
+            <li>Mehrere Deklarationen mit Strichpunkt trennen</li>
+        </ul>
+
+        <h2>CSS einbinden</h2>
+        <ul>
+            <li>Inline: style-Attribut am Element, nur im Notfall</li>
+            <li>Internal: style-Element im head, nicht wiederverwendbar</li>
+            <li>External: link-Element im head, Standard und am besten</li>
+        </ul>
+
+        <h2>Vererbung</h2>
+        <ul>
+            <li>Vererbt werden Farben und Schriften</li>
+            <li>Nicht vererbt werden Borders und Margins</li>
+            <li>Mit dem Wert inherit erzwingbar</li>
+        </ul>
+
+        <h2>Einfache Selektoren</h2>
+        <ul>
+            <li>Element: h1 wählt alle h1</li>
+            <li>ID: Raute plus Name, nur ein Element</li>
+            <li>Klasse: Punkt plus Name</li>
+            <li>span.important = nur span mit dieser Klasse</li>
+            <li>Zwei Klassen hintereinander = beide nötig</li>
+            <li>Universal: Stern wählt alles</li>
+            <li>Attribut: eckige Klammern, z. B. lang="en"</li>
+        </ul>
+
+        <h2>Kombinatoren</h2>
+        <ul>
+            <li>Beistrich = Selektorliste, wählt beide</li>
+            <li>Leerzeichen = Descendant, irgendwo darin</li>
+            <li>Größerzeichen = Child, nur direkte Kinder</li>
+            <li>Plus = Adjacent Sibling, direkt danach</li>
+            <li>Tilde = General Sibling, alle danach auf gleicher Ebene</li>
+        </ul>
+
+        <h2>Pseudo-Klassen</h2>
+        <ul>
+            <li>hover, active, visited = Zustand des Elements</li>
+            <li>before und after fügen mit content Text ein</li>
+            <li>first-letter formatiert den ersten Buchstaben</li>
+            <li>nth-child wählt z. B. jedes zweite Kind</li>
+            <li>Ein Doppelpunkt = Pseudo-Klasse, zwei = Pseudo-Element</li>
+        </ul>
+
+        <h2>Spezifität</h2>
+        <ul>
+            <li>Drei Zahlen: IDs, Klassen, Elemente</li>
+            <li>Element = 0,0,1 / Klasse = 0,1,0 / ID = 1,0,0</li>
+            <li>Gelesen wie eine Zahl gewinnt der größere Wert</li>
+            <li>Kein Übertrag: 0,1,0 ist größer als 0,0,11</li>
+        </ul>
+
+        <h2>Cascade</h2>
+        <ul>
+            <li>1. Importance: !important schlägt alles</li>
+            <li>2. Spezifität: Inline-Styles sind am stärksten</li>
+            <li>3. Source Order: bei Gleichstand gewinnt die letzte Regel</li>
+        </ul>
+    </main>
+</body>
+<footer></footer>

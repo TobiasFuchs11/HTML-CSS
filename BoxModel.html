@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<head lang="de">
+    <title>Box Model</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    <nav class="navÜ">
+        <button onclick="location.href='index.html'">Übersicht</button>
+    </nav>
+    <h1>Box Model</h1>
+
+    <main>
+        <h2>Aufbau</h2>
+        <ul>
+            <li>Von innen nach außen: content, padding, border, margin</li>
+            <li>width und height bestimmen die Größe des Inhalts</li>
+            <li>padding = Abstand Inhalt zum Rahmen</li>
+            <li>border-width = Dicke der Rahmenlinie</li>
+            <li>margin = Abstand nach außen zu anderen Elementen</li>
+        </ul>
+
+        <h2>Einzelwerte</h2>
+        <ul>
+            <li>Für jede Seite einzeln: padding-top, margin-bottom, border-left-width</li>
+            <li>Gibt es bei allen drei Eigenschaften</li>
+        </ul>
+
+        <h2>Shorthands</h2>
+        <ul>
+            <li>Vier Werte: oben, rechts, unten, links (Uhrzeigersinn)</li>
+            <li>Drei Werte: oben, links und rechts, unten</li>
+            <li>Zwei Werte: oben und unten, links und rechts</li>
+            <li>Ein Wert: alle vier Seiten gleich</li>
+            <li>border setzt width, style und color in einer Zeile</li>
+        </ul>
+
+        <h2>box-sizing</h2>
+        <ul>
+            <li>content-box ist der Standard</li>
+            <li>Dabei gilt width nur für den Inhalt, padding und border kommen dazu</li>
+            <li>Element wird also breiter als angegeben</li>
+            <li>border-box: width ist die Gesamtbreite inklusive padding und border</li>
+            <li>border-box ist praktischer beim Rechnen</li>
+        </ul>
+
+        <h2>display</h2>
+        <ul>
+            <li>none = Element wird ausgeblendet</li>
+            <li>inline = kein width und height, nur seitliche Abstände, andere Elemente daneben</li>
+            <li>block = eigene Zeile, alle Abstände, width und height möglich</li>
+            <li>inline-block = daneben erlaubt, aber mit width, height und allen Abständen</li>
+            <li>flex und grid machen das Element zum Layout-Container</li>
+        </ul>
+
+        <h2>Tipp</h2>
+        <ul>
+            <li>Developer Tools, Tab Computed, zeigen die Box grafisch an</li>
+        </ul>
+    </main>
+</body>
+<footer></footer>

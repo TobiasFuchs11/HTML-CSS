@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<head lang="de">
+    <title>Absolute and Relative Paths</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    <nav class="navÜ">
+        <button onclick="location.href='index.html'">Übersicht</button>
+    </nav>
+    <h1>Absolute and Relative Paths</h1>
+
+    <main>
+        <h2>URI</h2>
+        <ul>
+            <li>URI adressiert eine Ressource im Web, URL ist ein Spezialfall</li>
+            <li>Teile: scheme, authority, path, query, fragment</li>
+            <li>Pflicht sind nur scheme und path</li>
+        </ul>
+
+        <h2>Die Teile</h2>
+        <ul>
+            <li>scheme = Protokoll: http, https, ftp, mailto, tel</li>
+            <li>authority = Hostname oder IP, optional Port</li>
+            <li>path = Weg zur Ressource, getrennt mit Slash</li>
+            <li>query = Key-Value-Paare nach dem Fragezeichen</li>
+            <li>fragment = Sprungziel nach der Raute, meist eine id</li>
+        </ul>
+
+        <h2>Absolute Pfade</h2>
+        <ul>
+            <li>Vollständige URI in href oder src</li>
+            <li>Nachteil: bricht beim Verschieben der Seite</li>
+        </ul>
+
+        <h2>Relative Pfade</h2>
+        <ul>
+            <li>Nur Dateiname = aktuelles Verzeichnis</li>
+            <li>ordner/datei = Unterverzeichnis</li>
+            <li>Zwei Punkte und Slash = eine Ebene höher</li>
+            <li>Lässt sich mehrfach wiederholen</li>
+            <li>Vorteil: funktioniert auch nach dem Verschieben</li>
+        </ul>
+
+        <h2>Relativ zum Document Root</h2>
+        <ul>
+            <li>Pfad beginnt mit einem Slash</li>
+            <li>Startet immer im Wurzelverzeichnis der Website</li>
+            <li>Egal, in welchem Unterordner die aktuelle Seite liegt</li>
+        </ul>
+
+        <h2>Scheme-relativ</h2>
+        <ul>
+            <li>Pfad beginnt mit zwei Slashes ohne scheme</li>
+            <li>Übernimmt das Protokoll der aktuellen Seite</li>
+            <li>Heute: einfach immer HTTPS verwenden</li>
+        </ul>
+    </main>
+</body>
+<footer></footer>

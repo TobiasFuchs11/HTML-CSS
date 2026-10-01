@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<head lang="de">
+    <title>Flexbox</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    <nav class="navÜ">
+        <button onclick="location.href='index.html'">Übersicht</button>
+    </nav>
+    <h1>Flexbox</h1>
+
+    <main>
+        <h2>Grundidee</h2>
+        <ul>
+            <li>display flex macht ein Element zum Flex Container</li>
+            <li>Die Kind-Elemente sind die Flex Items</li>
+            <li>main axis = Richtung der Anordnung</li>
+            <li>cross axis = quer dazu</li>
+            <li>Löst vertikales Zentrieren und gleich hohe Spalten</li>
+        </ul>
+
+        <h2>flex-direction</h2>
+        <ul>
+            <li>row = nebeneinander (Standard)</li>
+            <li>column = untereinander</li>
+            <li>row-reverse und column-reverse = umgekehrte Reihenfolge</li>
+        </ul>
+
+        <h2>flex-wrap</h2>
+        <ul>
+            <li>nowrap = kein Umbruch (Standard)</li>
+            <li>wrap = bricht in neue Zeile um</li>
+            <li>wrap-reverse = bricht nach oben um</li>
+            <li>flex-flow ist die Shorthand für direction und wrap</li>
+        </ul>
+
+        <h2>justify-content (main axis)</h2>
+        <ul>
+            <li>flex-start = alles am Anfang (Standard)</li>
+            <li>flex-end = alles am Ende</li>
+            <li>center = alles in der Mitte</li>
+            <li>space-between = Platz nur zwischen den Items</li>
+            <li>space-around = Platz rund um jedes Item</li>
+            <li>space-evenly = alle Abstände gleich groß</li>
+        </ul>
+
+        <h2>align-items (cross axis)</h2>
+        <ul>
+            <li>stretch = auf volle Höhe gestreckt (Standard)</li>
+            <li>flex-start und flex-end = oben bzw. unten</li>
+            <li>center = vertikal zentriert</li>
+            <li>baseline = an der Schrift-Grundlinie</li>
+        </ul>
+
+        <h2>align-content</h2>
+        <ul>
+            <li>Richtet mehrere Zeilen entlang der cross axis aus</li>
+            <li>Wirkt nur mit flex-wrap wrap</li>
+            <li>Gleiche Werte wie justify-content</li>
+        </ul>
+
+        <h2>gap</h2>
+        <ul>
+            <li>Abstand zwischen den Items, nicht am Rand</li>
+            <li>Ein Wert gilt für Zeilen und Spalten</li>
+            <li>Zwei Werte: erst Zeilen, dann Spalten</li>
+            <li>Besser als margin: keine negativen Werte nötig</li>
+            <li>Nur ein Wert zu pflegen, stört justify-content nicht</li>
+        </ul>
+
+        <h2>Eigenschaften an den Items</h2>
+        <ul>
+            <li>flex-grow = wie der freie Platz verteilt wird</li>
+            <li>flex-shrink = wie stark geschrumpft wird, 0 heißt gar nicht</li>
+            <li>flex-basis = Startgröße, ähnlich width</li>
+            <li>flex = Shorthand für grow, shrink und basis</li>
+            <li>align-self = eigene Ausrichtung für ein Item</li>
+            <li>order = andere Reihenfolge als im Quelltext</li>
+        </ul>
+
+        <h2>Typische Anwendungen</h2>
+        <ul>
+            <li>Zentrieren: justify-content center plus align-items center</li>
+            <li>Seiten-Layout: Spalten mit flex und Prozentwerten</li>
+            <li>Navigationsleiste: nav mit space-between, ul als zweiter Container</li>
+        </ul>
+    </main>
+</body>
+<footer></footer>

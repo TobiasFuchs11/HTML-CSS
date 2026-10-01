@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<head lang="de">
+    <title>Responsiv Web Design</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    <nav class="navÜ">
+        <button onclick="location.href='index.html'">Übersicht</button>
+    </nav>
+    <h1>Responsive Web Design</h1>
+
+    <main>
+        <h2>Idee</h2>
+        <ul>
+            <li>Seite passt sich an die Bildschirmgröße an</li>
+            <li>Nur ein Inhalt, mehrere Darstellungen</li>
+            <li>Mobile First: zuerst für kleine Geräte entwerfen</li>
+            <li>Ein Handy-Design zu erweitern ist leichter als ein Desktop-Design zu schrumpfen</li>
+        </ul>
+
+        <h2>Media Queries</h2>
+        <ul>
+            <li>Regeln gelten nur unter bestimmten Bedingungen</li>
+            <li>Media Types: all, screen, print, speech</li>
+            <li>Features: width, height, orientation, resolution, hover und mehr</li>
+            <li>Kombinierbar mit min- und max-</li>
+            <li>In der Praxis wird fast nur die Viewport-Breite abgefragt</li>
+        </ul>
+
+        <h2>viewport Meta-Tag</h2>
+        <ul>
+            <li>Steht im head, mit width device-width und initial-scale 1</li>
+            <li>Ohne ihn emuliert das Handy einen Desktop und zoomt heraus</li>
+            <li>Mit ihm wird die echte Bildschirmbreite verwendet</li>
+        </ul>
+
+        <h2>cssPixel</h2>
+        <ul>
+            <li>Geräte haben verschiedene Auflösungen und Pixeldichten</li>
+            <li>Der Browser rechnet Pixelangaben passend um, z. B. Faktor 2 oder 3</li>
+        </ul>
+
+        <h2>Break Points</h2>
+        <ul>
+            <li>320 und 480 Pixel: Handy hochkant und quer</li>
+            <li>600 und 768 Pixel: Tablet hochkant</li>
+            <li>800 und 1024 Pixel: Tablet quer</li>
+            <li>1280 Pixel: Desktop und Laptop</li>
+            <li>1440 Pixel: großer Bildschirm</li>
+            <li>Üblich sind 3 bis 8 Breakpoints</li>
+        </ul>
+
+        <h2>CSS Frameworks</h2>
+        <ul>
+            <li>Fertige CSS-Klassen sparen Arbeit</li>
+            <li>Bekannt: Bootstrap, Tailwind, Materialize, SemanticUI</li>
+            <li>Bootstrap-Grid: container, row, col-1 bis col-12</li>
+            <li>12 Spalten, weil durch 2, 3 und 4 teilbar</li>
+            <li>Responsive mit col-sm, col-md und so weiter</li>
+            <li>Gilt jeweils für die Gerätegröße und alle größeren</li>
+            <li>Keine seitlichen margins an col-Elementen</li>
+            <li>CSS Reset vereinheitlicht die Standard-Formatierung der Browser</li>
+        </ul>
+    </main>
+</body>
+<footer></footer>
